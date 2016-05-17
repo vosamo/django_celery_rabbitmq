@@ -74,7 +74,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_celery_rabbitmq.wsgi.application'
 
-#Rabbitmq settings
+# Celery settings
 import djcelery
 djcelery.setup_loader()
 BROKER_URL = 'amqp://guest:guest@localhost:5672//'    # 用Rabbitmq做broker(中间人)
