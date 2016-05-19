@@ -28,6 +28,8 @@ rabbitmq充当中间人broker。
 
 执行python manage.py migrate，同步数据库。
 
+启动rabbitmq-server：`systemctl start rabbitmq-server`
+
 启动worker：在一个终端中执行`python manage.py celery worker --loglevel=info`
 
 启动server：在另一个终端中执行`python manage.py runserver`
